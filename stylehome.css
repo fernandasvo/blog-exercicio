@@ -1,0 +1,29 @@
+body {
+  font-family: 'Titillium Web', 'Century Gothic', sans-serif;
+    margin: 0;
+    background-image: url(img/home.jpg);
+}
+
+section img {
+  position: absolute;
+  left: 600px;
+  top: 200px;
+
+}
+
+nav {
+position: absolute;
+left: 550px;
+top: 350px;
+}
+
+nav a {
+  font-size: 32px;
+  font-weight: 500;
+  color: #ccccff;
+  margin-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  text-decoration: none;
+  float: left;
+}
