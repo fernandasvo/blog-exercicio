@@ -86,7 +86,6 @@ nav a {
   padding-right: 15px;
   margin-right: 8px;
   padding-bottom: 14px;
-  display: block;
   text-decoration: none;
   float: left;
 }
@@ -94,29 +93,37 @@ nav a {
 
 /*Deixa menu na horizontal */
 .menu > li{
-  float: left;
-  position: relative;
+	 display: inline;
+
 }
+
+/*para o submenu aparecer em lista vertical */
+.submenu2 li {
+	display: block;
+}
+
 /*Estilo quando faz hover no menu */
-.menu > li:hover a{
+.menu li:hover a{
   background:rgba(0, 90, 115, 0.8);
 }
 
 /* Hover para aparecer o submenu */
-.menu > li:hover > .submenu2 {
+.menu li:hover .submenu2 {
   display: block;
 }
 
 /* Configura o estilo do submenu */
-.menu > li > .submenu2 {
+.submenu2 {
   position: absolute;
   top: 50px;
+	left: 12%;
   display: none;
 }
 
 
+
 /*Estilo quando faz hover no menu */
-.menu > li > .submenu2 > li:hover a{
+.menu li .submenu2 li:hover a{
   font-weight: 500;
   background-color: rgba(0, 80, 115, 0.8);
 }
@@ -128,29 +135,30 @@ div img {
 
 }
 
-
-section {
-}
-
 section#conteudopost {
-  display: inline-block;
+	display: block;
+	float:left;
   right: 0;
   background-color: #d9d9ff;
-  padding: 25px;
+	padding: 25px;
 	max-width: 70%;
+	margin-top:5px;
 	margin-left: 5px;
   margin-bottom: 5px;
-  margin-right: 5px;
+
   color: #444242
 }
 
 
 section#subposts {
-  display: inline-block;
+	display: block;
+	float: right;
   position: relative;
   right: 0;
-  background-color: #e0e0eb;
+  background-color: #d9d9ff;
   max-width: 23%;
+	margin-top: 5px;
+	margin-right: 5px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -174,14 +182,14 @@ h1{
   color: #211915;
   font-style: italic;
   font-size: 12px;
-  margin: 0;
+  margin-bottom: 4px;
   font-weight: 300;
 }
 
 h2{
   color: #5E6F86;
   font-size: 40px;
-  margin: 0;
+  margin-bottom: 10px;
   font-weight: 400;
   border-bottom:7px;
   border-color: grey;
@@ -191,5 +199,7 @@ h2 b {
   font-weight: 700;
 }
 p{
-  color: #444242
+	margin-bottom: 10px;
+  color: #5E6F86;
+	line-height: 1.5;
 }
